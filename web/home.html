@@ -1,1 +1,118 @@
-html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CreditEmbassy/css/bootstrap.css">
+    <link rel="stylesheet" href="/CreditEmbassy/css/style.css">
+    <link rel="stylesheet" href="/CreditEmbassy/css/loader.css">
+    <title>Credit Embassy::<span>HOME</span></title>
+</head>
+<body>
+    <div class="container">
+        <div id="nav1">
+            <nav class="navbar navbar-light" style="background-color: #ffffff;">
+                <a class="navbar-brand" href="#">
+                    <img src="/CreditEmbassy/img/system/logo-finished.png" width="230" height="100" alt="">
+                </a>
+            </nav>
+        </div>
+
+        <div id="nav2">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffde59;">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <!-- admin -->
+                        <a class="nav-item nav-link active" href="#">Dashboard <span class="sr-only">(current)</span></a>
+                        <!-- admin end -->
+                        <!-- everyone -->
+                        <a class="nav-item nav-link" href="#">Features</a>
+                        <a class="nav-item nav-link" href="#">Features</a>
+                        <a class="nav-item nav-link" href="#">Pricing</a>
+                        <!-- everyone end -->
+                        <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- body start -->
+        <div id="card-machine">
+
+            <div id="card-selector-div">
+                <div id="card-selector">
+                    <form action="">
+                        <div class="card-options">
+                            <label for="network">Network</label>
+                            <select class="form-control form-control-sm" id="network">
+                                <option value="mtn">MTN</option>
+                                <option value="airtel">AIRTEL</option>
+                                <option value="9mobile">9MOBILE</option>
+                                <option value="glo">GLO</option>
+                                <option value="ntel">NTEL</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="price">Price</label>
+                            <input class="form-control form-control-sm" type="text" name="price" list="prices">
+                            <datalist id="prices">
+                                <option value="200">200</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                                <option value="2000">2000</option>
+                            </datalist>
+                        </div>
+
+                        <div class="card-options">
+                            <button class="btn btn-sm btn-success">GENERATE</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <div id="card-generator">
+                <div id="card-status">
+                    <div id="card-gen">
+                        <span id="validity">VALIDITY: <span>valid</span></span> 
+                        <span id="generated">GENERATED: <span>1-11-2019</span></span>
+                    </div>
+                </div>
+                <div id="card-number">
+                    <div id="card-logo">
+                        <img src="/CreditEmbassy/img/cards/mtn.png" alt="" width="70" height="70">
+                    </div>
+                    <div id="card-values">
+                        <h2>0000 <span class="reveal">0000 0000 0000</span></h2>
+                        <h5>2435676543<span class="reveal">324567543356</span></h5>
+                        <h5>EXPIRES: <span>5-11-2020</span></h5>
+                    </div>
+                </div>
+                <div id="payment">
+                    <button class="btn btn-sm btn-danger">DEL</button>
+                    <button class="btn btn-sm btn-success">SAVE</button>
+                    <button class="btn btn-sm btn-success">PAY</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- body end -->
+        
+        <footer>
+            <div id="footer">
+                <p>Copyright 2019 ~ WebWeavers Co.</p>
+            </div>
+        </footer>
+        <!-- container end -->
+    </div>
+    <script src="/CreditEmbassy/scripts/page_title.js"></script>
+    <script src="/CreditEmbassy/scripts/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+#nav1 {
+    margin: 1%;
+}
+
+#card-machine {
+    margin: auto;
+    /* background-color: rgb(202, 35, 35); */
+    width: 80%;
+    height: 400px;
+    padding: 50px;
+    padding-top: 10%;
+}
+
+#card-selector-div {
+    float: left;
+    width: 45%;
+    height: 190px;
+    border: 1px solid #ffde59be;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-right: 5%;
+  }
+
+.card-options {
+    padding: 6px 0; 
+}
+
+
+#card-selector button {
+    float: right;
+    margin: 1%;
+    margin-right: 0;
+    font-size: 10px;
+}
+
+#card-selector label {
+    font-size: 10px;
+}
+
+#separator {
+    float: left;
+    width: 10%;
+    height: 20px;
+    /* background-color: blue; */
+}
+
+#card-generator {
+    float: left;
+    width: 45%;
+    height: 190px;
+    /* border: 1px solid #ffde59be; */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background: linear-gradient(180deg,  grey, white, grey);
+    margin-left: 5%;
+}
+
+#card-status {
+    /* background-color: blue; */
+    padding: 5px 0;
+}
+
+#card-gen {
+    font-size: 10px;
+    padding: 3px 0;
+}
+
+#validity span {
+    background-color: green;
+    padding: 0 0.7%;
+    font-size: 9px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#generated {
+    float: right;
+}
+
+#card-number {
+    /* background-color: purple; */
+    padding: 15px 0;
+}
+
+#card-logo {
+    float: left;
+    border: 2px solid black;
+    margin: 0 15px;
+}
+
+#card-values h2{
+    font-size: 20px;
+}
+
+#card-values h5{
+    font-size: 10px;
+}
+
+#payment {
+    padding: 5px 0;
+    float: right;
+}
+
+#payment button {
+    font-size: 10px;
+}
+
+
+
+
+footer {
+    height: 50px;
+    background-color: #ffde59;
+    text-align: center;
+}
+
+#footer p{
+    padding-top: 10px;
+}
