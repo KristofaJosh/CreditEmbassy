@@ -14,9 +14,12 @@
     <div class="container">
         <div id="nav1">
             <nav class="navbar navbar-light" style="background-color: #ffffff;">
-                <a class="navbar-brand" href="#">
-                    <img src="/CreditEmbassy/img/system/logo-finished.png" width="230" height="100" alt="">
+                <a class="navbar-brand" href="/CreditEmbassy/web/home.html">
+                    <img src="/CreditEmbassy/img/system/logo-finished.png" width="230" height="100" alt="Credit Embassy logo">
                 </a>
+                <div>
+                    <a href="#">Login</a>
+                </div>
             </nav>
         </div>
 
@@ -28,11 +31,11 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <!-- admin -->
-                        <a class="nav-item nav-link active" href="#">Dashboard <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link active" href="/CreditEmbassy/web/dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
                         <!-- admin end -->
                         <!-- everyone -->
-                        <a class="nav-item nav-link" href="#">Features</a>
-                        <a class="nav-item nav-link" href="#">Features</a>
+                        <a class="nav-item nav-link" href="#">Bulk Buy</a>
+                        <a class="nav-item nav-link" href="#">Contact Us</a>
                         <a class="nav-item nav-link" href="#">Pricing</a>
                         <!-- everyone end -->
                         <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
@@ -42,7 +45,7 @@
         </div>
 
         <!-- body start -->
-        <div id="card-machine">
+        <div class="body-block">
 
             <div id="card-selector-div">
                 <div id="card-selector">
@@ -50,7 +53,7 @@
                         <div class="card-options">
                             <label for="network">Network</label>
                             <select class="form-control form-control-sm" id="network">
-                                <option value="mtn">MTN</option>
+                                <option value="mtn" selected>MTN</option>
                                 <option value="airtel">AIRTEL</option>
                                 <option value="9mobile">9MOBILE</option>
                                 <option value="glo">GLO</option>
@@ -70,7 +73,7 @@
                         </div>
 
                         <div class="card-options">
-                            <button class="btn btn-sm btn-success">GENERATE</button>
+                            <button type="submit" class="btn btn-sm">GENERATE</button>
                         </div>
 
                     </form>
@@ -96,7 +99,7 @@
                 </div>
                 <div id="payment">
                     <button class="btn btn-sm btn-danger">DEL</button>
-                    <button class="btn btn-sm btn-success">SAVE</button>
+                    <button class="btn btn-sm btn-warning">SAVE</button>
                     <button class="btn btn-sm btn-success">PAY</button>
                 </div>
             </div>
@@ -104,7 +107,7 @@
         </div>
 
         <!-- body end -->
-        
+
         <footer>
             <div id="footer">
                 <p>Copyright 2019 ~ WebWeavers Co.</p>
