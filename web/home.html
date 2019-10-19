@@ -34,7 +34,7 @@
                         <a class="nav-item nav-link active" href="/CreditEmbassy/web/dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
                         <!-- admin end -->
                         <!-- everyone -->
-                        <a class="nav-item nav-link" href="#">Bulk Buy</a>
+                        <a class="nav-item nav-link" href="/CreditEmbassy/web/customer-center.html">Customer Center</a>
                         <a class="nav-item nav-link" href="#">Contact Us</a>
                         <a class="nav-item nav-link" href="#">Pricing</a>
                         <!-- everyone end -->
@@ -63,9 +63,9 @@
 
                         <div>
                             <label for="price">Price</label>
-                            <input class="form-control form-control-sm" type="text" name="price" list="prices">
+                            <input class="form-control form-control-sm" type="text" id="price" name="price" list="prices">
                             <datalist id="prices">
-                                <option value="200">200</option>
+                                <option value="200" selected>200</option>
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                                 <option value="2000">2000</option>
@@ -73,7 +73,7 @@
                         </div>
 
                         <div class="card-options">
-                            <button type="submit" class="btn btn-sm">GENERATE</button>
+                            <button type="submit" class="btn btn-sm" id="generate">GENERATE</button>
                         </div>
 
                     </form>
@@ -83,8 +83,8 @@
             <div id="card-generator">
                 <div id="card-status">
                     <div id="card-gen">
-                        <span id="validity">VALIDITY: <span>valid</span></span> 
-                        <span id="generated">GENERATED: <span>1-11-2019</span></span>
+                        <span id="validity"><strong>VALIDITY: </strong><span>valid</span></span> 
+                        <span id="generated"><strong>GENERATED:</strong><span>1-11-2019</span></span>
                     </div>
                 </div>
                 <div id="card-number">
@@ -92,15 +92,15 @@
                         <img src="/CreditEmbassy/img/cards/mtn.png" alt="" width="70" height="70">
                     </div>
                     <div id="card-values">
-                        <h2>0000 <span class="reveal">0000 0000 0000</span></h2>
-                        <h5>2435676543<span class="reveal">324567543356</span></h5>
-                        <h5>EXPIRES: <span>5-11-2020</span></h5>
+                        <h2 id="pin1">0000 <span id="card_pin"> 0000 0000 0000</span></h2>
+                        <h5 id="serial_number">xxxxxxxxxxxx<span id="card_serial">xxxxxxxxx</span></h5>
+                        <h5 id="expires"><strong>EXPIRES: </strong><span>5-11-2020</span></h5>
                     </div>
                 </div>
                 <div id="payment">
                     <button class="btn btn-sm btn-danger">DEL</button>
                     <button class="btn btn-sm btn-warning">SAVE</button>
-                    <button class="btn btn-sm btn-success">PAY</button>
+                    <button class="btn btn-sm btn-success" id="pay">PAY</button>
                 </div>
             </div>
 
@@ -115,7 +115,10 @@
         </footer>
         <!-- container end -->
     </div>
-    <script src="/CreditEmbassy/scripts/page_title.js"></script>
+    <script src="/CreditEmbassy/scripts/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="/CreditEmbassy/scripts/bootstrap.js"></script>
+    <script src="/CreditEmbassy/scripts/page_title.js"></script>
+    <script src="/CreditEmbassy/scripts/main.js"></script>
 </body>
 </html>
